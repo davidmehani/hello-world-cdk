@@ -1,0 +1,1 @@
+export const FUNCTION_ARTIFACT_KEY: string = 'hello-function.zip';
