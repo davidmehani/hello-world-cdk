@@ -19,6 +19,7 @@ export class LambdaResources extends Construct {
             handler: 'index.handler',
             runtime: Runtime.NODEJS_20_X,
             code: S3Code.fromBucket(props.lambdaArtifacts, props.artifactsKey),
+            description: Date.now().toString(),
         });
 
     }
